@@ -1,6 +1,7 @@
 #pygame Project
 
 import pygame
+import random
 
 # ----- CONSTANTS
 BLACK = (0, 0, 0)
@@ -9,12 +10,18 @@ YELLOW = (255, 255, 0)
 SKY_BLUE = (95, 165, 228)
 WIDTH = 800
 HEIGHT = 600
-TITLE = "Pygame project 2"
+TITLE = "Flappy Bird"
 
 
 class Player(pygame.sprite.Sprite):
-    def __int__(self):
+    def __init__(self):
         super().__init__()
+
+        # Image
+        self.image = pygame.image.load("./assets/flappybird.png")
+        self.image = pygame.transform.scale(self.image, (40, 40)  # scale
+
+       self.rect
 
 
 def main():
